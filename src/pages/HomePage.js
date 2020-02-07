@@ -3,32 +3,42 @@ import InsertText from "../components/InsertText";
 import ReverseText from "../components/ReverseText";
 import ToUpperText from "../components/ToUpperText";
 import LargerText from "../components/LargerText";
+import isLoading from "../components/isLoading";
+
 
 export default class MainPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { text: "" };
+    this.state = { text: "",
+                    loading: true };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {}
+  componentDidMount() {                                     //loading screen switcher
+    this.setState({
+      loading: false
+    })
+  }
 
-  handleChange(event) {
+  handleChange(event) {                                     // handle keypress 
     this.setState({ text: event.target.value });
   }
 
-  handleSubmit(event) {
-    console.log(this.state.value);
-    event.preventDefault();
-  }
+  // handleSubmit(event) {                                   
+  //   console.log(this.state.value);
+  //   event.preventDefault();
+  // }
 
   render() {
+
+    if(this.state.loading) return <isLoading/>
+
     return (
       <div>
         <div className="App">
           <header className="container-fluid ">
-            <h1 className="header-text">Keko Box project</h1>
+            <h1 className="header-text">Keko Box project 💻 </h1> 
             <div className="row justify-content-md-center">
               <div className="col-4 text-bar">
                 <InsertText

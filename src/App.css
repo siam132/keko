@@ -7,16 +7,16 @@
   color: white;
 }
 
-.header-text{
+.header-text {
   font-size: 4em;
   align-items: center;
+  padding-bottom: .5em;
   flex: auto;
   font-weight: bold;
-  color: black
-  
+  color: black;
 }
 
-.description-text{
+.description-text {
   font-size: 1.5em;
   color: black;
 }
@@ -29,36 +29,35 @@
   min-height: 3em;
   background-color: antiquewhite;
   margin: 1em;
+  overflow: auto;
 }
 
 .text-uppercase-box {
   min-height: 3em;
   background-color: aquamarine;
   margin: 1em;
+  overflow: auto;
 }
 
 .text-largertext-box {
   min-height: 5em;
   background-color: lightgreen;
-  margin:1em;
+  margin: 1em;
+  overflow: auto;
 }
 
 .text-reverse {
   color: black;
-  padding-top: .5em;
-
-  
+  padding-top: 0.5em;
 }
 
 .text-uppercase {
   color: black;
-  padding-top: .5em;
- 
+  padding-top: 0.5em;
 }
 
 .text-largertext {
   font-size: 4em;
   font-weight: bold;
   color: black;
-  
 }
