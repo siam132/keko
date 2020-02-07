@@ -34,14 +34,14 @@
 
 .text-uppercase-box {
   min-height: 3em;
-  background-color: aquamarine;
+  background-color:antiquewhite;
   margin: 1em;
   overflow: auto;
 }
 
 .text-largertext-box {
   min-height: 5em;
-  background-color: lightgreen;
+  background-color:antiquewhite;
   margin: 1em;
   overflow: auto;
 }

@@ -57,11 +57,11 @@ export default class MainPage extends Component {
                 </div>
                 <div className="col justify-content-center col-md-6 col-sm-6">
                   <div className="row">
-                    <h4 className="description-text px-2 badge-danger rounded">
+                    <h4 className="description-text px-2 badge-warning rounded">
                       Reverse Text Box
                     </h4>
                     <ReverseText text={this.state.text} />
-                    <h4 className="description-text px-2 badge-success rounded">
+                    <h4 className="description-text px-2 badge-warning rounded">
                       To Upper Case Text Box
                     </h4>
                     <ToUpperText text={this.state.text} />
