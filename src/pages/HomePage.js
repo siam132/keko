@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import InsertText from "../components/InsertText";
 import ReverseText from "../components/ReverseText";
 import ToUpperText from "../components/ToUpperText";
-
+import LargerText from "../components/LargerText";
 
 export default class MainPage extends Component {
   constructor(props) {
@@ -12,9 +12,7 @@ export default class MainPage extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   handleChange(event) {
     this.setState({ text: event.target.value });
@@ -30,6 +28,7 @@ export default class MainPage extends Component {
       <div>
         <div className="App">
           <header className="container-fluid ">
+            <h1 className="header-text">Keko Box project</h1>
             <div className="row justify-content-md-center">
               <div className="col-4 text-bar">
                 <InsertText
@@ -40,9 +39,13 @@ export default class MainPage extends Component {
               </div>
               <div className="col-6">
                 <div className="row">
-                <ReverseText text={this.state.text}/>
-                <ToUpperText text={this.state.text}/>
-              </div>
+                  <h4 className="description-text badge-danger rounded">Reverse Text Box</h4>
+                  <ReverseText text={this.state.text} />
+                  <h4 className="description-text badge-success rounded">To Upper Case Text Box</h4>
+                  <ToUpperText text={this.state.text} />
+                  <h4 className="description-text badge-warning rounded">Larger Text Box</h4>
+                  <LargerText text={this.state.text} />
+                </div>
               </div>
             </div>
           </header>

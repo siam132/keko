@@ -1,5 +1,5 @@
 .App {
-  background-color: #282c34;
+  background-color: #6e7b96;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,9 +7,58 @@
   color: white;
 }
 
+.header-text{
+  font-size: 4em;
+  align-items: center;
+  flex: auto;
+  font-weight: bold;
+  color: black
+  
+}
 
+.description-text{
+  font-size: 1.5em;
+  color: black;
+}
 
-
-.text-bar{
+.text-bar {
   padding-top: 5em;
+}
+
+.text-reverse-box {
+  min-height: 3em;
+  background-color: antiquewhite;
+  margin: 1em;
+}
+
+.text-uppercase-box {
+  min-height: 3em;
+  background-color: aquamarine;
+  margin: 1em;
+}
+
+.text-largertext-box {
+  min-height: 5em;
+  background-color: lightgreen;
+  margin:1em;
+}
+
+.text-reverse {
+  color: black;
+  padding-top: .5em;
+
+  
+}
+
+.text-uppercase {
+  color: black;
+  padding-top: .5em;
+ 
+}
+
+.text-largertext {
+  font-size: 4em;
+  font-weight: bold;
+  color: black;
+  
 }
