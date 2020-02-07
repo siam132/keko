@@ -6,7 +6,7 @@ export default function InsertText(props) {
   return (
     <div>
       <form onChange={props.handleSubmit}>
-        <input
+        <input className="shadow"
           type="text"
           value={props.value}
           onChange={props.handleChange}

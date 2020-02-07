@@ -10,7 +10,7 @@
 .header-text {
   font-size: 4em;
   align-items: center;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   flex: auto;
   font-weight: bold;
   color: black;
