@@ -45,7 +45,7 @@ export default class MainPage extends Component {
         <div>
           <div className="App">
             <header className="container-fluid ">
-              <h1 className="header-text">Keko Box project 💻 </h1>
+              <h1 className="header-text">Keko Box project <span role="img">💻</span> </h1>
               <div className="row px-5 justify-content-center">
                 <div className="col p-3 justify-content-center col-md-6 col-sm-6 text-bar">
                   <h4 className="description-text">Insert Text</h4>
